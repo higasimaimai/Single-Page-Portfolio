@@ -318,6 +318,7 @@ html {
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 /*---- apply a natural box layout model to all elements -------*/
@@ -461,11 +462,6 @@ img {
 .card h3 {
   color: #346C73;
   font-weight: 400;
-}
-
-#career-goal .cards .card {
-  margin: 0;
-  padding: 1rem;
 }
 
 #career-goal .card p {
@@ -636,7 +632,7 @@ footer p {
     display: block;
   }
   #education, #profile {
-    font-size: 20px;
+    font-size: 18px;
   }
   #education {
     padding: 3rem 4rem;
@@ -655,7 +651,7 @@ footer p {
     align-items: stretch;
     padding: 2rem 4rem;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 18px;
   }
   #career-goal h1,
   #tool h1,
@@ -678,7 +674,6 @@ footer p {
   }
   #career-goal .cards .card,
   #tool .cards .card {
-    direction: ltr;
     width: 100%;
     margin: 0;
   }

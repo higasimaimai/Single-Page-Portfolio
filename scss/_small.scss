@@ -4,6 +4,7 @@ html {
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
     height: 100%;
+    scroll-behavior: smooth;
   }
   
   /*---- apply a natural box layout model to all elements -------*/
@@ -157,10 +158,6 @@ html {
     font-weight: $lightWeight;
   }
 
-  #career-goal .cards .card {
-    margin: 0;
-    padding: 1rem;
-  }
 
   #career-goal .card p {
     margin: 0;
