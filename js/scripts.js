@@ -1,38 +1,37 @@
 //inject current year in footer
 const rightNow = new Date();
-document.querySelector('#year').textContent = rightNow.getFullYear()
+document.querySelector('#year').textContent = rightNow.getFullYear();
 
-// get me a list of all the items to watch
-const myListOfItems = document.querySelectorAll('fix')
+// get all sections to watch
+const myListOfItems = document.querySelectorAll('main section');
 
-// a comma deliniated list of name/value pairs controlling how the observer works
+// observer settings
 let observerOptions = {
-    //null is the default and references the viewport
     root: null,
-    //alters the viewport. negative values decrease the size.
     rootMargin: '0px 0px 0px 0px',
-    //0 is barely showing, 1 is fully showing
-    threshold: fix
-  }
+    threshold: 0.5 // 50% visible = highlight
+};
 
-// AllItems is a list of all elements being watched
+// create the observer
 const myObserver = new IntersectionObserver(allItems => {
     allItems.forEach(singleItem => {
         if (singleItem.isIntersecting){
-            hiliteNav(singleItem.target)
+            hiliteNav(singleItem.target);
         }
-    })
-}, observerOptions)
+    });
+}, observerOptions);
 
-// function to hilight the current navigation items
+// highlight function
 function hiliteNav(x) {
-	document.querySelector('.active').classList.remove('active');
-	let theid = x.getAttribute('id');
-	let newActiveLink = document.querySelector(`[href="#${theid}"]`)
-	newActiveLink.parentElement.classList.add('fix');
+    const oldActive = document.querySelector('.active');
+    if (oldActive) oldActive.classList.remove('active');
+
+    let theid = x.getAttribute('id');
+    let newActiveLink = document.querySelector(`[href="#${theid}"]`);
+    newActiveLink.parentElement.classList.add('active');
 }
 
-//call the function for each element in the list
+// start watching all sections
 myListOfItems.forEach(item => {
-    myObserver.observe(item)
+    myObserver.observe(item);
 });
