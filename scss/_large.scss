@@ -1,0 +1,100 @@
+body {
+    display: grid;
+    grid-template-columns: 250px auto;
+}
+
+#mainWrapper {
+    box-sizing: border-box;
+}
+
+#navWrapper {
+    grid-row: 1 / span 3;
+    position: relative;
+    font-size: 20px;
+}
+nav ul {
+    flex-direction: column;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    li {
+        flex: none;
+        width: 100%;
+    }
+    a {
+        display: flex;
+        padding: 1rem 2rem;
+        text-align: left;
+        span { display: block; }
+    }
+}
+
+#education, #profile {
+    font-size: 20px;
+}
+
+#education {
+    padding: 3rem 4rem;
+}
+
+#education .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    justify-items: end;
+}
+
+#career-goal,
+#tool,
+#contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 2rem 4rem;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+#career-goal h1,
+#tool h1,
+#contact-info h1,
+#career-goal p,
+#tool p,
+#contact-info p {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+#career-goal .cards,
+#tool .cards {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#career-goal .cards .card,
+#tool .cards .card {
+  direction: ltr;
+  width: 100%;
+  margin: 0;
+}
+
+#contact-info form,
+#contact-info .contact,
+#contact-info .social {
+  width: 100%;
+  max-width: 800px;
+}
+
+div.social {
+    font-size: 6rem;
+  }

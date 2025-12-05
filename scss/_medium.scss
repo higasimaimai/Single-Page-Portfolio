@@ -1,0 +1,64 @@
+nav {
+    ul {
+        justify-content: space-around;
+    }
+    a {
+      img {display: none;}
+      span {
+        display: block;
+
+      }
+    }
+  }
+
+section {
+    padding: 2.5rem;
+}
+
+#profile {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    h3 {
+      font-size: 1.4rem;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      max-width: 400px;
+    }
+  }
+  
+
+.cards {
+    grid-template-columns: 1fr;
+}
+
+#career-goal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    h1 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+    .cards {
+      width: 100%;
+      max-width: 900px;
+      display: grid;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,.1);
+      margin: 0;
+    }
+  }
+  
+  div.social {
+    font-size: 4rem;
+  }

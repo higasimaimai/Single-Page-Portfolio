@@ -1,0 +1,242 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    height: 100%;
+  }
+  
+  /*---- apply a natural box layout model to all elements -------*/
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    color: $fontColor;
+  }
+
+  #headerWrapper {
+    background-color: $whiteColor;
+    color: $primaryColor;
+  }
+
+  #navWrapper {
+    background-color: $menuColor;
+    position: sticky;
+    top: 0;
+  }
+
+  nav {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    li {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    li.active {
+      background-color: darken($menuColor, 10%);
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      padding: .75rem;
+      color: $fontColor;
+      text-decoration: none;
+      img {width: 25px;}
+      span {
+        display: none;
+      }
+      &:hover {
+        background-color: lighten($menuColor, 10%);
+      }
+    }
+  }
+
+  section {
+    min-height: 100vh;
+    padding: 1.5rem;
+    scroll-margin-top: 5rem;
+    h1 {
+      margin-top: 0;
+      color: $fontColor;
+    }
+    h3 {
+      margin-top: .3rem;
+      color: $fontColor;
+    }
+    p {
+      line-height: 1.6;
+    }
+  }
+
+  #profile {
+    padding: 2rem;
+    background: $whiteColor; 
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+      color: $secondaryColor;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      font-weight: $boldWeight;
+      opacity: 0.8;
+      color: $accentColor;
+    }
+  
+    p {
+      font-size: 1rem;
+      max-width: 320px;
+      line-height: 1.6;
+    }
+  }
+
+  h1 {
+    color: $secondaryColor;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .cards {
+    .card {
+      border: 2px solid $secondaryColor;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 1rem 0;
+    h2, h3, img {
+        margin: 0;
+        padding: 1rem $gutter; 
+    }
+    h2 {
+        background-color: $secondaryColor;
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    p {
+      margin: 0;
+      padding: 0 $gutter $gutter;
+    }
+    }
+  }
+
+  .card h3 {
+    color: $accentColor;
+    font-weight: $lightWeight;
+  }
+
+  #career-goal .cards .card {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  #career-goal .card p {
+    margin: 0;
+    padding: $gutter;
+  }
+
+  #career-goal .card img{
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    width: auto;
+  }
+
+  form {
+    display: grid;
+    gap: 1rem;
+
+    label {
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: .8rem;
+      border: 1px solid $accentColor;
+      border-radius: 8px;
+    }
+    button {
+      padding: .8rem;
+      background: $accentColor;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+  
+      &:hover {
+        background: #111;
+      }
+    }
+  }
+
+  div.contact {
+    margin: 1rem;
+    p{
+        font-size: 18px;}
+    ion-icon{
+        color: $accentColor; 
+        padding-right: 7px;
+    }
+    a {
+        color: $fontColor;
+    }
+}
+
+div.social {
+  display:flex;
+  justify-content: center;
+  a {
+  display: block;
+  border: sold 1px #666;
+  font-size: 3rem;
+  margin: .5rem;
+  padding: .5rem;
+  color: $secondaryColor;
+  }
+  a:hover {
+      background-color: $whiteColor;
+  }
+}
+  
+  footer {
+    padding: 1rem $gutter;
+    background: $primaryColor;
+    p {
+        margin: 0;
+        font-weight: $normalWeight;
+        text-align: center;
+        color: $fontColor;
+    }
+}

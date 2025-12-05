@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <meta name="description" content="single-page-portfolio">
+    <meta name="author" content="Micah Kariya">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.min.css">
+    
+    <!-- Google Font Stuff -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Fav Iconn Stuff -->
+
+</head>
+<body>
+    <div id="navWrapper">
+        <nav>
+            <ul>
+                <li class="active"><a href="#profile"><img src="images/profile.svg"><span>Profile</span></a></li>
+                <li><a href="#education"><img src="images/education.svg"><span>Education</span></a></li>
+                <li><a href="#career-goal"><img src="images/career-goal.svg"><span>Career Goal</span></a></li>
+                <li><a href="#tool"><img src="images/tool.svg"><span>Tool</span></a></li>
+                <li><a href="#contact-info"><img src="images/contact.svg"><span>Contact Me</span></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mainWrapper">
+        <main>
+        <section id="profile">
+            <h1>Micah Kariya</h1>
+            <h3>UX/UI Designer</h3>
+            <p>I am a UX/UI Designer focused on creating intuitive and meaningful digital experiences.</p>
+        </section>
+
+        <section id="education">
+            <h1>Education</h1>
+            <img src="images/hero.webp" width="1200" height="704" alt="hero-image">
+            <p>My educational background helped me build strong design foundations, technical skills, and an understanding of user-centered thinking. Through hands-on projects and coursework, I learned how to approach design problems with both strategy and creativity.</p>
+
+            <div class="cards">
+                <div class="card">
+                    <h2>Digital Design Program</h2>
+                    <h3>School: Davis Technical College</h3>
+                    <p>Completed coursework in interface design, prototyping, visual communication, and design tools including Figma, Illustrator, and Photoshop. Worked on multiple real-world style projects that strengthened both creativity and professional execution.</p>
+                </div>
+                <div class="card">
+                    <h2>Web Development Foundations</h2>
+                    <h3>School: Layton High School / or insert your actual HS</h3>
+                    <p>Learned the fundamentals of front-end web structure and coding basics. Gained experience creating responsive layouts and understanding how design translates into functioning websites.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="career-goal">
+            <h1>Career Goal</h1>
+            <p>As a UX/UI Designer, my goal is to continue growing as a creative problem-solver and build products that improve the way people interact with technology. I strive to combine strong visuals with meaningful user experiences.</p>
+
+            <div class="cards">
+                <div class="card">
+                    <h2>Become a Lead UX/UI Designer</h2>
+                    <img src="images/lead.svg">
+                    <p>I aim to take on larger design challenges and lead creative direction on digital products. I want to guide teams in developing thoughtful, user-centered experiences.</p>
+                </div>
+                <div class="card">
+                    <h2>Build Accessible & Inclusive Designs</h2>
+                    <img src="images/inclusive.svg">
+                    <p>A major goal is to design interfaces that everyone can use, regardless of ability. I want to incorporate accessibility standards and inclusive considerations into every project.</p>
+                </div>
+                <div class="card">
+                    <h2>Master Advanced Prototyping</h2>
+                    <img src="images/master.svg">
+                    <p>I plan to sharpen my skills in high-fidelity prototyping and interactive design tools to create realistic, testable user experiences for web and mobile apps.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tool">
+            <h1>Tools</h1>
+            <p>These are the main tools I use for design, prototyping, and visual creation. Each tool supports a different part of my workflow and helps me turn ideas into polished, professional designs.</p>
+
+            <div class="cards">
+                <div class="card">
+                    <h2>Adobe Illustrator</h2>
+                    <img src="images/adobe-illustrator.webp" width="1200" height="675" alt="adobe-illustrator">
+                    <p>Used for vector graphics, icons, branding elements, and clean, scalable illustrations. Great for creating precise shapes and design assets.</p>
+                </div>
+                <div class="card">
+                    <h2>Figma</h2>
+                    <img src="images/figma.webp" width="1200" height="675" alt="figma">
+                    <p>My primary UX/UI design tool for wireframes, prototypes, and collaborative interface design. Ideal for designing responsive layouts and interactive flows.</p>
+                </div>
+                <div class="card">
+                    <h2>Adobe Photoshop</h2>
+                    <img src="images/adobe-photoshop.webp" width="1200" height="675" alt="adobe-photoshop">
+                    <p>Used for image editing, visual compositing, mockups, and detailed graphics. Useful for enhancing photos and creating rich visual assets.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-info">
+            <h1>Contact Me</h1>
+            <p>If you want to collaborate or have questions, feel free to reach out.</p>
+
+            <form>
+                <label>Name</label>
+                <input type="text" required>
+
+                <label>Email</label>
+                <input type="email" required>
+
+                <label>Message</label>
+                <textarea rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact">
+                <p><ion-icon name="mail-outline"></ion-icon><a href="mailto:micahk@gmail.com">micahk@gmail.com</a></p>
+                <p><ion-icon name="call-outline"></ion-icon><a href="tel:1234567890">123 456 7890</a></p>
+            </div>
+
+            <div class="social">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            </div>
+        </section>
+        </main>
+    </div>
+
+    <div id="footerWrapper">
+        <footer>
+            <p>&copy; <span id="year">x</span> &bull; Micah Kariya</p>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
